@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+body{
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    object-fit: cover;
+    background-color: red;
+    margin: 0 auto;
+    z-index: 99;
+
+}
+.image .photo{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+.mycarte{
+    background-color: rgb(235, 191, 191);
+    margin: 10px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid;
+    box-shadow: 0 0 100px ;
+    width: 300px;
+    height: 450px; 
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+
+
+}
+.mycarte::before{
+    
+    content: " "; 
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    border-radius: 22px 22px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.nav4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.nav4 a{
+    text-decoration: none;
+    color: rgb(244, 245, 245);
+    border-radius: 50%;
+    border: 0px solid rgb(247, 243, 243);
+    background-color: blue;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.mycarte .nav2{
+    gap: px;
+}
+.nav2 button{
+    margin: 0 10px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: rgb(169, 248, 248);
+    transition: all 0.5s ease;
+}
+.nav2 button:hover{
+    background-color: rgb(5, 253, 253);
+    font-size: 13.6px;
+    font-weight: 650;
+    color: rgb(48, 21, 156);
+}
+.mycarte .icons{
+
+}
+.icons button{
+    border-radius: 25px;
+    border: 0;
+    padding: 0 5px;
+    margin: 0 1px;
+    cursor: pointer;
+}
